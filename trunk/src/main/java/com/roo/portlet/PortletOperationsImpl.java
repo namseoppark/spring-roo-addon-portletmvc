@@ -95,7 +95,7 @@ public class PortletOperationsImpl implements PortletOperations {
 	/** {@inheritDoc} */
 	public void setup(PortalServer portalServer) {
 		// Install the add-on Google code repository needed to get the annotation 
-		projectOperations.addRepository(new Repository("Portlet Roo add-on repository", "Portlet Roo add-on repository", "https://portlet-addon.googlecode.com/svn/repo"));
+		projectOperations.addRepository(new Repository("Portlet Roo add-on repository", "Portlet Roo add-on repository", "https://spring-roo-addon-portletmvc.googlecode.com/svn/repo"));
 		
 		List<Dependency> dependencies = new ArrayList<Dependency>();
 		
