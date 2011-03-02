@@ -1,0 +1,24 @@
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/felix/org.apache.felix.framework/3.0.7/org.apache.felix.framework-3.0.7.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/felix/org.apache.felix.ipojo/1.6.8/org.apache.felix.ipojo-1.6.8.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/felix/org.apache.felix.scr/1.6.0/org.apache.felix.scr-1.6.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/felix/org.apache.felix.scr.annotations/1.2.0/org.apache.felix.scr.annotations-1.2.0.jar" sourcepath="M2_REPO/org/apache/felix/org.apache.felix.scr.annotations/1.2.0/org.apache.felix.scr.annotations-1.2.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.compendium/4.1.0/org.osgi.compendium-4.1.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.core/4.1.0/org.osgi.core-4.1.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.addon.entity/1.1.2.RELEASE/org.springframework.roo.addon.entity-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.addon.web.mvc.controller/1.1.2.RELEASE/org.springframework.roo.addon.web.mvc.controller-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.bootstrap/1.1.2.RELEASE/org.springframework.roo.bootstrap-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.classpath/1.1.2.RELEASE/org.springframework.roo.classpath-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.metadata/1.1.2.RELEASE/org.springframework.roo.metadata-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.model/1.1.2.RELEASE/org.springframework.roo.model-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.process.manager/1.1.2.RELEASE/org.springframework.roo.process.manager-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.project/1.1.2.RELEASE/org.springframework.roo.project-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.shell/1.1.2.RELEASE/org.springframework.roo.shell-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/roo/org.springframework.roo.support/1.1.2.RELEASE/org.springframework.roo.support-1.1.2.RELEASE.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+</classpath>
