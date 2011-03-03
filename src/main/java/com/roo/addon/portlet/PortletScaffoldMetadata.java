@@ -37,8 +37,8 @@ import org.springframework.roo.support.util.Assert;
  * 
  * @since 1.1.0
  */
-public class PortletMetadata extends AbstractItdTypeDetailsProvidingMetadataItem {
-	private static final String PROVIDES_TYPE_STRING = PortletMetadata.class.getName();
+public class PortletScaffoldMetadata extends AbstractItdTypeDetailsProvidingMetadataItem {
+	private static final String PROVIDES_TYPE_STRING = PortletScaffoldMetadata.class.getName();
 	private static final String PROVIDES_TYPE = MetadataIdentificationUtils.create(PROVIDES_TYPE_STRING);
 
 	private PortletScaffoldAnnotationValues annotationValues;
@@ -50,7 +50,7 @@ public class PortletMetadata extends AbstractItdTypeDetailsProvidingMetadataItem
 	private JavaTypeMetadataDetails javaTypeMetadataHolder;
 	private JavaType formBackingType;
 	
-	public PortletMetadata(String identifier, JavaType aspectName, PhysicalTypeMetadata governorPhysicalTypeMetadata, 
+	public PortletScaffoldMetadata(String identifier, JavaType aspectName, PhysicalTypeMetadata governorPhysicalTypeMetadata, 
 			PortletScaffoldAnnotationValues annotationValues, List<MethodMetadata> existingMethods, 
 			SortedMap<JavaType, JavaTypeMetadataDetails> specialDomainTypes, List<JavaTypeMetadataDetails> dependentTypes, 
 			Map<JavaSymbolName, DateTimeFormatDetails> dateTypes, Set<FinderMetadataDetails> dynamicFinderMethods) {
@@ -98,6 +98,10 @@ public class PortletMetadata extends AbstractItdTypeDetailsProvidingMetadataItem
 		MethodMetadataBuilder methodBuilder = new MethodMetadataBuilder(getId(), Modifier.PUBLIC, methodName, JavaType.STRING_OBJECT, paramTypes, paramNames, bodyBuilder);
 		methodBuilder.setAnnotations(annotations);
 		return methodBuilder.build();
+	}
+	
+	public PortletScaffoldAnnotationValues getAnnotationValues() {
+		return annotationValues;
 	}
 	
 	/**

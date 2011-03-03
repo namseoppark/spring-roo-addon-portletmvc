@@ -18,7 +18,7 @@ import org.springframework.roo.model.JavaType;
 import org.springframework.roo.project.Path;
 
 /**
- * Provides {@link PortletMetadata}. This type is called by Roo to retrieve the metadata for this add-on.
+ * Provides {@link PortletScaffoldMetadata}. This type is called by Roo to retrieve the metadata for this add-on.
  * Use this type to reference external types and services needed by the metadata type. Register metadata triggers and
  * dependencies here. Also define the unique add-on ITD identifier.
  * 
@@ -26,7 +26,7 @@ import org.springframework.roo.project.Path;
  */
 @Component
 @Service
-public final class PortletMetadataProvider extends AbstractItdMetadataProvider {
+public final class PortletScaffoldMetadataProvider extends AbstractItdMetadataProvider {
 	@Reference private TypeLocationService typeLocationService;
 	/**
 	 * The activate method for this OSGi component, this will be called by the OSGi container upon bundle activation 
@@ -83,7 +83,7 @@ public final class PortletMetadataProvider extends AbstractItdMetadataProvider {
 		MemberDetails formBackingObjectMemberDetails = memberDetailsScanner.getMemberDetails(getClass().getName(), formbackingClassOrInterfaceDetails);
 
 		// Pass dependencies required by the metadata in through its constructor
-		return new PortletMetadata(metadataIdentificationString, aspectName, governorPhysicalTypeMetadata, annotationValues,
+		return new PortletScaffoldMetadata(metadataIdentificationString, aspectName, governorPhysicalTypeMetadata, annotationValues,
 				MemberFindingUtils.getMethods(controllerMemberDetails),
 				WebMetadataUtils.getRelatedApplicationTypeMetadata(formBackingObject, formBackingObjectMemberDetails, metadataService, typeLocationService, metadataIdentificationString, metadataDependencyRegistry), 
 				WebMetadataUtils.getDependentApplicationTypeMetadata(formBackingObject, formBackingObjectMemberDetails, metadataService, typeLocationService, metadataIdentificationString, metadataDependencyRegistry), 
@@ -99,16 +99,16 @@ public final class PortletMetadataProvider extends AbstractItdMetadataProvider {
 	}
 
 	protected String getGovernorPhysicalTypeIdentifier(String metadataIdentificationString) {
-		JavaType javaType = PortletMetadata.getJavaType(metadataIdentificationString);
-		Path path = PortletMetadata.getPath(metadataIdentificationString);
+		JavaType javaType = PortletScaffoldMetadata.getJavaType(metadataIdentificationString);
+		Path path = PortletScaffoldMetadata.getPath(metadataIdentificationString);
 		return PhysicalTypeIdentifier.createIdentifier(javaType, path);
 	}
 	
 	protected String createLocalIdentifier(JavaType javaType, Path path) {
-		return PortletMetadata.createIdentifier(javaType, path);
+		return PortletScaffoldMetadata.createIdentifier(javaType, path);
 	}
 
 	public String getProvidesType() {
-		return PortletMetadata.getMetadataIdentiferType();
+		return PortletScaffoldMetadata.getMetadataIdentiferType();
 	}
 }
