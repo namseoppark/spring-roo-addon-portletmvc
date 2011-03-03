@@ -4,7 +4,7 @@
   <groupId>com.roo.portlet</groupId>
   <artifactId>com.roo.portlet</artifactId>
   <packaging>bundle</packaging>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.1</version>
   <name>spring-roo-addon-portletmvc</name>
   <organization>
     <name>Your project/company name goes here (used in copyright and vendor information in the manifest)</name>
@@ -119,9 +119,9 @@
     </dependency>
   </dependencies>
   <scm>
-    <connection>scm:svn:https://spring-roo-addon-portletmvc.googlecode.com/svn/trunk</connection>
-    <developerConnection>scm:svn:https://spring-roo-addon-portletmvc.googlecode.com/svn/trunk</developerConnection>
-    <url>http://code.google.com/p/spring-roo-addon-portletmvc/source/browse</url>
+    <connection>scm:svn:https://spring-roo-addon-portletmvc.googlecode.com/svn/tags/spring-roo-addon-portletmvc</connection>
+    <developerConnection>scm:svn:https://spring-roo-addon-portletmvc.googlecode.com/svn/tags/spring-roo-addon-portletmvc</developerConnection>
+    <url>http://code.google.com/p/spring-roo-addon-portletmvc/source/browse/tags/spring-roo-addon-portletmvc</url>
   </scm>
   <distributionManagement>
     <repository>
