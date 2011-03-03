@@ -1,0 +1,22 @@
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-02-27 12:12:21
+addon create advanced --topLevelPackage com.roo.portlet --projectName spring-roo-addon-portletmvc
+exit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-02-27 12:15:09
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-02-27 12:15:23
+perform eclipse
+exit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-02-27 12:19:28
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-03-01 09:59:42
+exit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-03-01 10:00:31
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-03-01 10:04:52
+perform eclipse
+perform eclipse
+perform eclipse
+perform eclipse
+perform eclipse
+perform eclipse
+perform eclipse
+perform eclipse
+exit
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-03-01 10:43:53
