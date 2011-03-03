@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<repository lastmodified="20110303004233.381" name="MyRepository">
+<repository lastmodified="20110303191348.129" name="MyRepository">
 <resource id="com.roo.portlet/0.1.0" presentationname="spring-roo-addon-portletmvc" symbolicname="com.roo.portlet" uri="httppgp://spring-roo-addon-portletmvc.googlecode.com/svn/repo/com/roo/portlet/com.roo.portlet/0.1.0/com.roo.portlet-0.1.0.jar" version="0.1.0">
 <description>An add-on created by Spring Roo's addon creator feature.</description>
 <size>26399</size>
@@ -13,6 +13,46 @@
 <p n="presentationname" v="spring-roo-addon-portletmvc"/>
 <p n="symbolicname" v="com.roo.portlet"/>
 <p n="version" t="version" v="0.1.0"/>
+</capability>
+<capability name="package">
+<p n="package" v="com.roo.portlet"/>
+<p n="uses" v="org.springframework.roo.model,org.springframework.roo.project,org.springframework.roo.support.util,javax.xml.transform,org.springframework.roo.metadata,javax.xml.parsers,org.springframework.roo.process.manager,org.w3c.dom,org.springframework.roo.shell,org.springframework.roo.classpath.itd,org.springframework.roo.classpath.details.annotations,org.springframework.roo.classpath,org.springframework.roo.classpath.details,org.springframework.roo.addon.web.mvc.controller.details,org.springframework.roo.support.style,org.springframework.roo.classpath.scanner,org.osgi.service.component,org.springframework.roo.addon.entity,org.springframework.roo.classpath.details.annotations.populator"/>
+<p n="version" t="version" v="0.0.0"/>
+</capability>
+<require extend="false" filter="(&amp;(package=com.roo.portlet)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">Import package com.roo.portlet</require>
+<require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">Import package javax.xml.parsers</require>
+<require extend="false" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">Import package javax.xml.transform</require>
+<require extend="false" filter="(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.osgi.service.component ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.addon.entity)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.addon.entity ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.addon.web.mvc.controller.details)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.addon.web.mvc.controller.details ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.classpath)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.classpath ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.classpath.details)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.classpath.details ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.classpath.details.annotations)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.classpath.details.annotations ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.classpath.details.annotations.populator)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.classpath.details.annotations.populator ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.classpath.itd)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.classpath.itd ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.classpath.scanner)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.classpath.scanner ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.metadata)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.metadata ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.model)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.model ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.process.manager)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.process.manager ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.project)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.project ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.shell)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.shell ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.support.style)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.support.style ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.springframework.roo.support.util)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">Import package org.springframework.roo.support.util ;version=1.1.0</require>
+<require extend="false" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">Import package org.w3c.dom</require>
+</resource>
+<resource id="com.roo.portlet/0.1.1" presentationname="spring-roo-addon-portletmvc" symbolicname="com.roo.portlet" uri="httppgp://spring-roo-addon-portletmvc.googlecode.com/svn/repo/com/roo/portlet/com.roo.portlet/0.1.1/com.roo.portlet-0.1.1.jar" version="0.1.1">
+<description>An add-on created by Spring Roo's addon creator feature.</description>
+<size>26782</size>
+<documentation>http://www.some.company</documentation>
+<source>com/roo/portlet/com.roo.portlet/0.1.1/com.roo.portlet-0.1.1-sources.jar.asc</source>
+<javadoc>com/roo/portlet/com.roo.portlet/0.1.1/com.roo.portlet-0.1.1-javadoc.jar.asc</javadoc>
+<license>http://www.gnu.org/copyleft/gpl.html</license>
+<category id="com.roo.portlet"/>
+<capability name="bundle">
+<p n="manifestversion" v="2"/>
+<p n="presentationname" v="spring-roo-addon-portletmvc"/>
+<p n="symbolicname" v="com.roo.portlet"/>
+<p n="version" t="version" v="0.1.1"/>
 </capability>
 <capability name="package">
 <p n="package" v="com.roo.portlet"/>
