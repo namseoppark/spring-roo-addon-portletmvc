@@ -100,7 +100,7 @@ public class PortletOperationsImpl implements PortletOperations {
 		List<Dependency> dependencies = new ArrayList<Dependency>();
 		
 		// Install the dependency on the add-on jar (
-		dependencies.add(new Dependency("roo.addon.portlet", "roo.addon.portlet", "0.1.0.BUILD-SNAPSHOT", DependencyType.JAR, DependencyScope.PROVIDED));
+		dependencies.add(new Dependency("spring-roo-addon-portletmvc", "spring-roo-addon-portletmvc", "0.1.0.BUILD-SNAPSHOT", DependencyType.JAR, DependencyScope.PROVIDED));
 		
 		// Install dependencies defined in external XML file
 		for (Element dependencyElement : XmlUtils.findElements("/configuration/spring-portlet-mvc/dependencies/dependency", XmlUtils.getConfiguration(getClass()))) {
