@@ -65,20 +65,20 @@ public class PortletMetadata extends AbstractItdTypeDetailsProvidingMetadataItem
 		this.formBackingType = annotationValues.getFormBackingObject();
 		javaTypeMetadataHolder = specialDomainTypes.get(formBackingType);
 		
-		// Adding a new sample field definition
-		builder.addMethod(getShowMethod());
+		//-- add "show" method, which shows the home page of the portlet
+		builder.addMethod(getListMethod());
 			
 		// Create a representation of the desired output ITD
 		itdTypeDetails = builder.build();
 	}
 	
-	private MethodMetadata getShowMethod() {
+	private MethodMetadata getListMethod() {
 		JavaTypePersistenceMetadataDetails javaTypePersistenceMetadataHolder = javaTypeMetadataHolder.getPersistenceDetails();
 		if (javaTypePersistenceMetadataHolder == null || javaTypePersistenceMetadataHolder.getFindMethod() == null) {
 			return null;
 		}
 		
-		JavaSymbolName methodName = new JavaSymbolName("show");
+		JavaSymbolName methodName = new JavaSymbolName("list");
 		
 		AnnotationMetadataBuilder renderMappingAnnotation = new AnnotationMetadataBuilder(new JavaType("org.springframework.web.portlet.bind.annotation.RenderMapping"));
 		List<AnnotationMetadataBuilder> annotations = new ArrayList<AnnotationMetadataBuilder>();
