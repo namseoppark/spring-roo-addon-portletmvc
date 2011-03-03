@@ -80,13 +80,22 @@ public class PortletMetadata extends AbstractItdTypeDetailsProvidingMetadataItem
 		
 		JavaSymbolName methodName = new JavaSymbolName("list");
 		
+		List<AnnotatedJavaType> paramTypes = new ArrayList<AnnotatedJavaType>();
+		paramTypes.add(new AnnotatedJavaType(new JavaType("org.springframework.ui.Model"), null));
+		
+		List<JavaSymbolName> paramNames = new ArrayList<JavaSymbolName>();
+		paramNames.add(new JavaSymbolName("uiModel"));
+		
 		AnnotationMetadataBuilder renderMappingAnnotation = new AnnotationMetadataBuilder(new JavaType("org.springframework.web.portlet.bind.annotation.RenderMapping"));
 		List<AnnotationMetadataBuilder> annotations = new ArrayList<AnnotationMetadataBuilder>();
 		annotations.add(renderMappingAnnotation);
 		
+		String plural = javaTypeMetadataHolder.getPlural().toLowerCase();
+		
 		InvocableMemberBodyBuilder bodyBuilder = new InvocableMemberBodyBuilder();
+		bodyBuilder.appendFormalLine("uiModel.addAttribute(\"" + plural + "\", " + formBackingType.getNameIncludingTypeParameters(false, builder.getImportRegistrationResolver()) + "." + javaTypePersistenceMetadataHolder.getFindAllMethod().getMethodName() + "());");
 		bodyBuilder.appendFormalLine("return \"home\";");
-		MethodMetadataBuilder methodBuilder = new MethodMetadataBuilder(getId(), Modifier.PUBLIC, methodName, JavaType.STRING_OBJECT, null, null, bodyBuilder);
+		MethodMetadataBuilder methodBuilder = new MethodMetadataBuilder(getId(), Modifier.PUBLIC, methodName, JavaType.STRING_OBJECT, paramTypes, paramNames, bodyBuilder);
 		methodBuilder.setAnnotations(annotations);
 		return methodBuilder.build();
 	}
