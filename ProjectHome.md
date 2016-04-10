@@ -1,0 +1,1 @@
+Spring roo addon for developing portlets using Spring Portlet MVC. The supported portal servers include Liferay and GateIn.
